@@ -1,6 +1,9 @@
 package com.proquest.interview.phonebook;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public interface PhoneBook {
-	public Person findPerson(String firstName, String lastName);
-	public void addPerson(Person newPerson);
+	Person findPerson(String fName, String lName, Connection cn);
+	void addPerson(Person newPerson, Connection cn) throws SQLException, ClassNotFoundException;
 }

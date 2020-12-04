@@ -1,7 +1,28 @@
 package com.proquest.interview.phonebook;
 
 public class Person {
-	public String name;
-	public String phoneNumber;
-	public String address;
+	private String name;
+	private String phoneNumber;
+	private String address;
+
+	public Person(String name, String phoneNumber, String address) {
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+	}
+
+	public Person() {}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
 }
